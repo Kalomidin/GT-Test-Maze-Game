@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Maze Game</title>
+    <style> body { margin: 0; background: #123412; } </style>
+    <script src="src/phaser.js"></script>
+    <script src="src/main.js"></script>
+    <script src="src/game.js"></script>
+</head>
+<body>
+<script>
+(function() {
+    var game = new Phaser.Game(2560, 1440, Phaser.CANVAS, 'game');
+    game.state.add('main', player.Main);
+    game.state.add('game', player.Game);
+    game.state.start('main');
+})();
+</script>
+</body>
+</html>
